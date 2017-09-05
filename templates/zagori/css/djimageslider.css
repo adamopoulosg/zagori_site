@@ -1,0 +1,168 @@
+/* General slider styles */
+.djslider-loader-override {
+	margin: 0 auto;
+	position: relative;
+	background: url(../images/loader.gif) center center no-repeat;
+	max-width: 100%;
+	overflow: hidden;
+}
+.djslider-override {
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: opacity 400ms ease;
+	transition: opacity 400ms ease;
+	opacity: 0;
+	max-height:800px;
+	overflow:hidden;
+}
+.djslider-override .slider-container {
+	position: absolute;
+	overflow:hidden;
+	left: 0; 
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+.djslider-override ul.djslider-in {
+	position: relative;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+}
+.djslider-override ul.djslider-in > li {
+	list-style: none outside !important;
+	float: left;
+	padding: 0 !important;
+	border: 0 !important;
+	position: relative;
+	background: none;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+ul.djslider-in > li {
+	text-align: center;
+	
+}	
+.djslider-override img.dj-image {
+	border: 0 !important;
+	margin: 0 !important;
+	border-style: none !important;
+}
+.djslider-override.img-vcenter img.dj-image {
+	position: relative;
+  	top: 50%;
+  	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+/* Slide description area */
+.djslider-override .slide-desc {
+	position: absolute;
+}
+.djslider-override .slide-desc-in {
+	position: relative;
+}
+.slide-desc-bg-override {
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: RGBA(0,0,0,0.65);
+}
+.slide-desc-text-override {
+	position: relative;
+	color: #fff;
+	padding: 15px 15px 5px;
+	text-align: left;
+}
+.slide-desc-text-override .slide-title {
+	font-size: 1.5em;
+	color: #fff;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+.slide-desc-text-override .slide-title a {
+	color: #fff;
+}
+.slide-desc-text-override a.readmore {
+	float: right;
+	margin-bottom: 10px;
+}
+
+/* Navigation buttons / indicators */
+.djslider-override .navigation-container {
+	position: relative;
+	
+	text-align: center !important;
+}
+
+.djslider-override .navigation-container a {
+	outline: none;
+}
+.djslider-override .navigation-container .prev-button {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	left: 0;
+	
+}
+.djslider-override .navigation-container .next-button {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	right: 0;
+}
+.djslider-override .navigation-container .play-button, 
+.djslider-override .navigation-container .pause-button {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	left: 50%;
+}
+
+.djslider-override .navigation-container-custom,
+.djslider-override .navigation-numbers {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.djslider-override .load-button {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background: #444;
+	border: 2px solid #fff;
+	margin: 0 3px;
+	cursor: pointer;
+	border-radius: 50%;
+	opacity: 0.5;
+	-webkit-transition: opacity 400ms ease;
+	transition: opacity 400ms ease;
+}
+.djslider-override .load-button-active {
+	opacity: 1;
+}
+.djslider-override .navigation-numbers .load-button {
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 16px;
+	color: #fff;
+}
+
+/* Fading elements */
+.djslider-loader-override .showOnHover {
+	opacity: 0;
+	-webkit-transition: opacity 200ms ease 50ms;
+	transition: opacity 200ms ease 50ms;
+}
+.djslider-loader-override:hover .showOnHover,
+.djslider-loader-override.focused .showOnHover {
+	opacity: 1;
+}

@@ -1,0 +1,137 @@
+/*
+ */
+ 
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#filter {
+	background: transparent;
+	display: block;
+	height: 39px;
+	position: relative;
+}
+
+#filter:before, #filter:after {}
+#filter:before {}
+#filter:after {}
+#filter span, #filter a{
+    font-family: 'BebasNeueRegular', Arial;
+    font-size:14px;
+	color: #333;
+	display: inline-block;
+	height: 39px;
+	line-height: 37px;
+	padding: 0 15px;
+	text-decoration: none;
+}
+#filter span {color:#999; padding: 0 15px 0 0;}
+#filter a:hover{}
+#filter a.active{ color:#f20;}
+
+
+/*----------------------------
+	Content area
+-----------------------------*/
+#folio-container ul.hidden{	display:none;}
+#folio-container{
+	display:block;
+	overflow:hidden;
+	margin:0 auto;
+	padding:0px !important;
+	margin:0px !important;
+}
+
+#folio-container li{
+	float: left;
+	list-style: none outside none;
+	position: relative;
+}
+
+#folio-container ul{
+	overflow:hidden;
+	padding:0px !important;
+	margin:0px !important;
+}
+
+#folio-container ul.hidden{
+	display:none;
+}
+
+
+ul#stage {list-style-type:none;padding:0;padding-left:0;overflow:hidden;}
+#stage li{ float:left; position: relative;}
+#stage li a,
+#stage li a img { display: block; position: relative; }
+#stage li a img{ opacity: 1; }
+
+#stage li a .description{
+	display: block;
+	background: rgba(24, 24, 24, 0.8);
+	color: #fff;
+	font-family: 'BebasNeueRegular', Arial;
+    padding: 10px 0 10px 10px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	height: 0px;
+	overflow: hidden;
+	opacity: 0;
+	text-align: left;
+	text-shadow: 1px 1px 1px #303857;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#stage li a:hover .description{ height: 80px; opacity: 1; }
+
+/*
+#stage li a .description{
+	
+	background: rgba(111,76,51,0.8);
+	position: absolute;
+	top: 0px;
+	left: -200px;
+	color: #fff;
+	display: none;
+	z-index: 1001;
+	text-align: left;
+}
+*/
+#stage li a .description h3{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size: 22px;
+	font-weight:normal;
+    letter-spacing:0;
+    line-height: 20px;
+    margin: 0px;
+    padding: 5px 5px 0;
+    color: #fff!important;
+}
+
+#stage li a .description p{
+	padding: 10px 0px;
+	margin: 10px;
+    font-family: Arial, sans-serif;
+	font-size: 11px!important; line-height:14px;
+	font-style: italic;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	color: #ccc;
+}
+
+#stage li a .description .itemDetails {
+    display:block; 
+    padding: 10px 0px; 
+    font-size: 11px; 
+    font-style:normal; 
+    line-height:12px;
+}

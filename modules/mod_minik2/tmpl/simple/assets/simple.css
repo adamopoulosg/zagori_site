@@ -1,0 +1,82 @@
+/**
+ * @version		$Id: mod_minik2.php 1171 2011-12-17 11:32:15Z schro $
+ * @package		Mini K2 
+ * @Subpackage  Simple style layout with JQuery Masonry efffect
+ * @author		TemplatePlazza http://www.templateplazza.com + JoomlaWorks http://www.joomlaworks.gr
+ * @copyright	Copyright (c) 2006 - 2011 TemplatePlazza. All rights reserved.
+ * @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ */
+ 
+/*  
+ * Mini k2  sub layout template
+ * jQuery Masonry
+ */
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.clr {
+	clear: both;
+}
+
+.block{
+	float:left;
+	margin: 0 10px 10px 0;
+	background-color:#fafafa;
+	border:1px solid #f2f2f2;
+	padding:10px;
+	width:200px;
+	box-shadow: inset 0px -10px 25px #eee;
+}
+.block:hover { background-color:#fff;box-shadow:1px 1px 2px #f5f5f5; }
+	.last{margin: 0 0 20px 0;}
+	
+.block h2.title {
+	/*font-size: 15px;
+	line-height:21px;*/
+	font-family: 'BebasNeueRegular', Arial, sans-serif;
+	font-weight:400;
+	text-transform: uppercase;
+	background: transparent;
+	color: #444;
+	padding: 0;
+	margin:0 0 10px 0;
+	letter-spacing:0;
+}
+p.minik2-simple-intro {
+	font-size:90%; line-height:16px;
+	margin:5px 0 0;
+	color: #aaa;
+	text-shadow: 0 1px 0 #fff;
+}
+.minik2-simple-rating {
+	margin: 10px 0;
+	padding: 5px 15px;
+	display: inline-block;
+	background: url('star.png') #aaa no-repeat 10px 50%;
+	color: #fff;
+	padding-left: 25px;
+	font-size: 90%;
+	border-bottom: 1px solid #fff;
+	margin-left: -10px;
+	text-shadow: 0 1px 0 #333;
+}
+.block img{
+	border:none;
+	display:block;
+}
+.block span.itemCategory, .block span.itemDateCreated {display:inline; font-size:80%; color:#ccc;padding-bottom:0px;}
+
+
+.thumbs-wrapper{
+	margin: 0 0 10px 0;
+	overflow:hidden;
+	position:relative;
+}
+.thumbs img{ float:left;}
